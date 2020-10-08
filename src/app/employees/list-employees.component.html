@@ -1,0 +1,14 @@
+
+
+<div class="container">
+    <div class="row ">
+        <div class="card m-2 verticalAlignCenter"  *ngFor="let employee of employees">
+            <img class="card-img-top imageClass " [src]="employee.photoPath" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{employee.name}}</h5>
+              <p class="card-text">Gender: {{employee.gender}}</p>
+              <p class="card-text"> Date of Birth: {{employee.dateOfBirth | date}}</p>
+            </div>
+        </div>
+    </div>
+</div>
